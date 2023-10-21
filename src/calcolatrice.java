@@ -51,4 +51,6 @@ public class calcolatrice {
     static int power (int a, int b){
         return (int)Math.pow(a,b);
     }
+
+    public static int multiplication(int a, int b){ return a * b;}
 }
