@@ -45,6 +45,9 @@ public class calcolatrice {
             default: System.out.println("input non valido");
         }
     }
+    static int subtraction(int a, int b){
+        return a - b;
+    }
     static int addition (int a, int b){
         return a + b;
     }
