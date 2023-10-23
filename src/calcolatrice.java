@@ -73,4 +73,13 @@ public class calcolatrice {
         }
         return result;
     }
+
+    public static double division(int firstNumber, int secondNumber) {
+        if (secondNumber == 0) {
+            System.out.println("Errore: Divisione per zero non consentita.");
+            return 0; // Gestione dell'errore, potresti scegliere un valore diverso.
+        }
+        return (double) firstNumber / secondNumber;
+    }
+    
 }
