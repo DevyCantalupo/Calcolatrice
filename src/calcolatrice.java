@@ -4,7 +4,7 @@ public class calcolatrice {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("inserisci un operatore algebrico. Inserisci '?' per vedere se il numero è pari o dispari.");
-        char operator =scan.next().charAt(0);
+        char operator = scan.next().charAt(0);
 
         char[] validOperators = {'+', '-', '*', '/', '^', '?'};
 
@@ -21,13 +21,13 @@ public class calcolatrice {
         } else {
             System.out.println("Errore: Inserito un operatore non valido.");
         }
-
+            scan.close();
     }
 
     public static void operator(char operator){
         int secondNumber = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("inserisci il  primo numero (o base per la potenza )");
+        System.out.println("inserisci un numero");
         int firstNumber = scanner.nextInt();
         if (operator != '?'){
             System.out.println("inserisci il  seconda  numero (o di quanto elevare la base )");
